@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        if (newConfig.getLayoutDirection() == Configuration.ORIENTATION_PORTRAIT) {
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             Log.v("vegeta", "现在变成了竖屏");
         }else{
             Log.v("vegeta", "现在变成了横屏");
